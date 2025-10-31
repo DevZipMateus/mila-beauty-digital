@@ -14,7 +14,7 @@ const Hero = () => {
         <img 
           src={heroBackground} 
           alt="Mila Beauty Background" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[center_30%]"
         />
         <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" />
       </div>
