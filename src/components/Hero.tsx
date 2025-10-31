@@ -1,5 +1,6 @@
 import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
@@ -8,8 +9,15 @@ const Hero = () => {
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-rose-50 via-white to-rose-50/30" />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroBackground} 
+          alt="Mila Beauty Background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" />
+      </div>
       
       {/* Decorative Elements */}
       <div className="absolute top-40 left-10 w-72 h-72 bg-rose-200/20 rounded-full blur-3xl animate-float" />
