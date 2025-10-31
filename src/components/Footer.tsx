@@ -7,8 +7,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-card border-t">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {/* Logo e Descrição */}
           <div className="space-y-4">
             <img src={logo} alt="Mila Beauty Cosméticos" className="h-12 w-auto" />
@@ -19,7 +19,7 @@ const Footer = () => {
 
           {/* Links Rápidos */}
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Links Rápidos</h3>
+            <h3 className="font-semibold mb-3 md:mb-4 text-foreground">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* Contato */}
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Contato</h3>
+            <h3 className="font-semibold mb-3 md:mb-4 text-foreground">Contato</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4" />
@@ -65,7 +65,7 @@ const Footer = () => {
 
           {/* Redes Sociais */}
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Redes Sociais</h3>
+            <h3 className="font-semibold mb-3 md:mb-4 text-foreground">Redes Sociais</h3>
             <div className="flex gap-4">
               <a
                 href="#"
@@ -85,9 +85,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <Separator className="my-8" />
+        <Separator className="my-6 md:my-8" />
 
-        <div className="text-center text-sm text-muted-foreground">
+        <div className="text-center text-xs md:text-sm text-muted-foreground">
           <p>© {currentYear} Mila Beauty Cosméticos. Todos os direitos reservados.</p>
         </div>
       </div>

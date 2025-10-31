@@ -41,26 +41,26 @@ const Hero = () => {
           </div>
 
           {/* H1 - Nome da Empresa */}
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 animate-fade-in-up px-4">
             Mila Beauty Cosméticos
           </h1>
 
           {/* H2 - Descrição */}
-          <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto animate-fade-in-up px-4" style={{ animationDelay: "0.2s" }}>
             Beleza que inspira cuidado. Produtos de qualidade para mulheres, homens e crianças em Faxinal do Soturno.
           </h2>
 
           {/* Slogan */}
-          <p className="text-lg md:text-xl font-medium text-rose-600 mb-12 italic animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <p className="text-base sm:text-lg md:text-xl font-medium text-rose-600 mb-8 md:mb-12 italic animate-fade-in-up px-4" style={{ animationDelay: "0.3s" }}>
             "Beleza que inspira cuidado."
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in-up px-4" style={{ animationDelay: "0.4s" }}>
             <Button
               onClick={handleWhatsAppClick}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
             >
               Fale conosco
             </Button>
@@ -76,7 +76,7 @@ const Hero = () => {
               }}
               variant="outline"
               size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg rounded-full transition-all duration-300"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300 w-full sm:w-auto"
             >
               Ver produtos
             </Button>

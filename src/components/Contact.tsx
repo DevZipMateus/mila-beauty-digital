@@ -44,11 +44,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-12">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up"
+                className="bg-white p-6 md:p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
@@ -80,24 +80,24 @@ const Contact = () => {
           </div>
 
           {/* Social Media & CTA */}
-          <div className="bg-gradient-to-br from-rose-50 to-white p-8 md:p-12 rounded-2xl shadow-soft text-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <h3 className="text-2xl font-semibold text-foreground mb-4">
+          <div className="bg-gradient-to-br from-rose-50 to-white p-6 md:p-8 lg:p-12 rounded-2xl shadow-soft text-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-3 md:mb-4">
               Siga-nos no Instagram
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-sm md:text-base text-muted-foreground mb-6">
               Acompanhe nossos lançamentos, promoções e dicas de beleza!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Button
                 onClick={() => window.open("https://www.instagram.com/milacosmeticos_fx/", "_blank")}
-                className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-6 md:px-8 py-5 md:py-6 text-base md:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
               >
                 <Instagram className="w-5 h-5 mr-2" />
                 @milacosmeticos_fx
               </Button>
               <Button
                 onClick={() => window.open("https://wa.me/5555991396093", "_blank")}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 md:px-8 py-5 md:py-6 text-base md:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Fale conosco

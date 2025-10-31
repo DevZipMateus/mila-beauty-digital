@@ -49,8 +49,8 @@ const Values = () => {
           </div>
 
           {/* Mission & Vision */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-rose-50 to-white p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
+            <div className="bg-gradient-to-br from-rose-50 to-white p-6 md:p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up">
               <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mb-6">
                 <mission.icon className="w-7 h-7 text-rose-600" />
               </div>
@@ -62,7 +62,7 @@ const Values = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-rose-50 to-white p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            <div className="bg-gradient-to-br from-rose-50 to-white p-6 md:p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
               <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mb-6">
                 <vision.icon className="w-7 h-7 text-rose-600" />
               </div>
@@ -77,10 +77,10 @@ const Values = () => {
 
           {/* Values */}
           <div>
-            <h3 className="text-2xl font-semibold text-foreground text-center mb-8 animate-fade-in">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-6 md:mb-8 animate-fade-in">
               Nossos valores
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {values.map((value, index) => (
                 <div
                   key={index}

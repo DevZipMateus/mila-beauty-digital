@@ -72,9 +72,9 @@ const Gallery = () => {
           }}
           className="w-full max-w-6xl mx-auto"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-2 md:-ml-4">
             {images.map((image, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Dialog>
                     <DialogTrigger asChild>

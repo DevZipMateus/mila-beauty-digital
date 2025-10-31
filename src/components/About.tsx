@@ -14,8 +14,8 @@ const About = () => {
           </div>
 
           {/* Timeline Content */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-rose-50 to-white p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+            <div className="bg-gradient-to-br from-rose-50 to-white p-6 md:p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up">
               <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mb-6">
                 <Calendar className="w-7 h-7 text-rose-600" />
               </div>
@@ -25,7 +25,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-rose-50 to-white p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            <div className="bg-gradient-to-br from-rose-50 to-white p-6 md:p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
               <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mb-6">
                 <Store className="w-7 h-7 text-rose-600" />
               </div>
@@ -35,7 +35,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-rose-50 to-white p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <div className="bg-gradient-to-br from-rose-50 to-white p-6 md:p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center mb-6">
                 <Heart className="w-7 h-7 text-rose-600" />
               </div>

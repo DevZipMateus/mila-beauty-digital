@@ -68,11 +68,11 @@ const Products = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {products.map((product, index) => (
               <div
                 key={index}
-                className={`bg-gradient-to-br ${product.color} p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 animate-fade-in-up group`}
+                className={`bg-gradient-to-br ${product.color} p-6 md:p-8 rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 animate-fade-in-up group`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className={`w-14 h-14 ${product.iconBg} rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
