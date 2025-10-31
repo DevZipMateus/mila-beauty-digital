@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import Values from "@/components/Values";
 import Contact from "@/components/Contact";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <Values />
         <Contact />
       </main>
+      <Footer />
       <WhatsAppButton />
     </div>
   );
