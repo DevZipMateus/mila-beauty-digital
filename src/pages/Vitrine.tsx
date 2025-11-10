@@ -8,7 +8,8 @@ const Vitrine = () => {
   useEffect(() => {
     const calculateHeight = () => {
       const headerHeight = 80; // 80px
-      const calculatedHeight = window.innerHeight - headerHeight;
+      const badgeHeight = 63; // Espaço para o badge do MonteSite
+      const calculatedHeight = window.innerHeight - headerHeight - badgeHeight;
       setIframeHeight(calculatedHeight);
     };
 
@@ -25,7 +26,7 @@ const Vitrine = () => {
         <meta name="description" content="Demonstração de vitrine dos produtos Mila Beauty Cosméticos" />
       </Helmet>
       
-      <div className="min-h-screen overflow-hidden flex flex-col">
+      <div className="min-h-screen overflow-hidden flex flex-col pb-[63px]">
         <Header />
         
         <main className="w-full pt-20" style={{ height: `${iframeHeight}px` }}>
