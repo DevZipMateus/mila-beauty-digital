@@ -6,6 +6,9 @@ const Vitrine = () => {
   const [iframeHeight, setIframeHeight] = useState(0);
 
   useEffect(() => {
+    // Travar scroll do body
+    document.body.style.overflow = 'hidden';
+    
     const calculateHeight = () => {
       const headerHeight = 80; // 80px
       const badgeHeight = 63; // Espaço para o badge do MonteSite
@@ -16,7 +19,10 @@ const Vitrine = () => {
     calculateHeight();
     window.addEventListener("resize", calculateHeight);
 
-    return () => window.removeEventListener("resize", calculateHeight);
+    return () => {
+      window.removeEventListener("resize", calculateHeight);
+      document.body.style.overflow = 'auto';
+    };
   }, []);
 
   useEffect(() => {
