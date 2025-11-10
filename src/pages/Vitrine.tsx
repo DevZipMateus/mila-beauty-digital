@@ -39,10 +39,10 @@ const Vitrine = () => {
         <meta name="description" content="Demonstração de vitrine dos produtos Mila Beauty Cosméticos" />
       </Helmet>
       
-      <div className="min-h-screen overflow-hidden flex flex-col pb-[63px]">
+      <div className="min-h-screen overflow-hidden flex flex-col pb-[63px] bg-background">
         <Header />
         
-        <main className="w-full pt-20" style={{ height: `${iframeHeight}px` }}>
+        <main className="w-full pt-20 bg-background" style={{ height: `${iframeHeight}px` }}>
           <iframe 
             src="https://botimila.egestor.com.br/vitrine/" 
             className="w-full h-full border-none"
