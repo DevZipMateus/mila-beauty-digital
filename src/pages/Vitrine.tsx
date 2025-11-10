@@ -19,6 +19,19 @@ const Vitrine = () => {
     return () => window.removeEventListener("resize", calculateHeight);
   }, []);
 
+  useEffect(() => {
+    // Carregar o script do badge do MonteSite
+    const script = document.createElement('script');
+    script.src = 'https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Limpar o script quando o componente for desmontado
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -37,9 +50,8 @@ const Vitrine = () => {
           />
         </main>
         
-        {/* Badge do MonteSite */}
-        <div id="montesite-footer-badge" className="fixed bottom-0 left-0 right-0 z-50"></div>
-        <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
+        {/* Container para o badge do MonteSite */}
+        <div id="montesite-footer-badge"></div>
       </div>
     </>
   );
