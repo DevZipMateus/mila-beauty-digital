@@ -36,6 +36,10 @@ const Vitrine = () => {
             title="Vitrine Mila Beauty"
           />
         </main>
+        
+        {/* Badge do MonteSite */}
+        <div id="montesite-footer-badge" className="fixed bottom-0 left-0 right-0 z-50"></div>
+        <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
       </div>
     </>
   );
