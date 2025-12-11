@@ -31,19 +31,19 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    gallery1,
-    gallery2,
-    gallery3,
-    gallery4,
-    gallery5,
-    gallery6,
     gallery7,
-    gallery8,
-    gallery9,
-    gallery10,
+    gallery2,
     gallery11,
-    gallery12,
+    gallery5,
     gallery13,
+    gallery1,
+    gallery9,
+    gallery4,
+    gallery8,
+    gallery3,
+    gallery12,
+    gallery6,
+    gallery10,
   ];
 
   return (
