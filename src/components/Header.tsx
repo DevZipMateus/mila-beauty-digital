@@ -47,15 +47,8 @@ const Header = () => {
     id: "sobre",
     label: "Sobre"
   }, {
-    id: "vitrine",
-    label: "Produtos",
-    isLink: true
-  }, {
     id: "galeria",
     label: "Galeria"
-  }, {
-    id: "valores",
-    label: "Valores"
   }, {
     id: "contato",
     label: "Contato"
@@ -69,7 +62,7 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-8">
-            {menuItems.map(item => <button key={item.id} onClick={() => handleNavigation(item.id, item.isLink)} className="text-foreground/80 hover:text-primary font-medium transition-colors duration-300 relative group">
+            {menuItems.map(item => <button key={item.id} onClick={() => handleNavigation(item.id)} className="text-foreground/80 hover:text-primary font-medium transition-colors duration-300 relative group">
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </button>)}
@@ -83,7 +76,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && <nav className="md:hidden py-4 border-t border-border animate-fade-in">
-            {menuItems.map(item => <button key={item.id} onClick={() => handleNavigation(item.id, item.isLink)} className="block w-full text-left px-4 py-3 text-foreground/80 hover:text-primary hover:bg-muted/50 transition-colors duration-200">
+            {menuItems.map(item => <button key={item.id} onClick={() => handleNavigation(item.id)} className="block w-full text-left px-4 py-3 text-foreground/80 hover:text-primary hover:bg-muted/50 transition-colors duration-200">
                 {item.label}
               </button>)}
           </nav>}
