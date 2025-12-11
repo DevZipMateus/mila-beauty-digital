@@ -1,8 +1,11 @@
 import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/5555991396093", "_blank");
   };
@@ -65,15 +68,7 @@ const Hero = () => {
               Fale conosco
             </Button>
             <Button
-              onClick={() => {
-                const element = document.getElementById("produtos");
-                if (element) {
-                  const offset = 80;
-                  const elementPosition = element.getBoundingClientRect().top;
-                  const offsetPosition = elementPosition + window.pageYOffset - offset;
-                  window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-                }
-              }}
+              onClick={() => navigate("/vitrine")}
               variant="outline"
               size="lg"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300 w-full sm:w-auto"
