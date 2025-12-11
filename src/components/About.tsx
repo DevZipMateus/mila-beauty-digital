@@ -46,23 +46,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Story Text */}
-          <div className="bg-gradient-to-br from-white to-rose-50 p-8 md:p-12 rounded-2xl shadow-soft animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Tudo começou em 2018, com a revenda de cosméticos como um hobby, enquanto eu iniciava a faculdade. 
-              O que era apenas uma paixão por produtos de beleza foi crescendo junto com o amor pelas vendas — 
-              e acabou se tornando muito mais do que uma renda extra.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Em 2022, ao concluir a faculdade, surgiu a oportunidade de transformar esse sonho em realidade: 
-              nascia a Mila Beauty Cosméticos, em Faxinal do Soturno.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Desde então, seguimos com o propósito de oferecer um atendimento diferenciado e um espaço onde 
-              cada pessoa encontre o que precisa para cuidar da autoestima, se sentir bem e presentear quem ama. 
-              A cada dia, buscamos inovar, crescer e ser referência em beleza, cuidado e bem-estar na nossa cidade e região.
-            </p>
-          </div>
         </div>
       </div>
     </section>
