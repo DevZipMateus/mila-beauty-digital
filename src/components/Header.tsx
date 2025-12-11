@@ -47,8 +47,9 @@ const Header = () => {
     id: "sobre",
     label: "Sobre"
   }, {
-    id: "produtos",
-    label: "Produtos"
+    id: "vitrine",
+    label: "Produtos",
+    isLink: true
   }, {
     id: "galeria",
     label: "Galeria"
@@ -58,10 +59,6 @@ const Header = () => {
   }, {
     id: "contato",
     label: "Contato"
-  }, {
-    id: "vitrine",
-    label: "Vitrine",
-    isLink: true
   }];
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-background/80 backdrop-blur-sm"}`}>
       <div className="container mx-auto px-4">
